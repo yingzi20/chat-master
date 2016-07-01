@@ -7,21 +7,14 @@ var mysql = require('mysql');
 	"mysql" : {
 		"host" : "localhost",
 		"port" : "3306",
-		"username" : "qx_chat",
+		"username" : "sailor_chat",
 		"password" : "yXVcwNx9RpzLBzWu",
-		"db_name" : "qx_chat"
+		"db_name" : "sailor_chat"
 	}
 }
  */
 
 var db_config = {
-	//"database": "ctcdb_test",
-	//"host": "192.168.1.102",
-	//"username": "root",
-	//"password": "123456",
-	//"dialect": "mysql",
-	//"isolationLevel": "READ COMMITTED"
-
 	host            : '192.168.1.101',
 	port            : 3306,
 	user            : 'root',
@@ -29,8 +22,8 @@ var db_config = {
 	database        : 'mydb'
 };
 
-if(process.env.QXCHAT_CONFIG) {
-	var env_config = JSON.parse(process.env.QXCHAT_CONFIG).mysql;
+if(process.env.SAILORCHAT_CONFIG) {
+	var env_config = JSON.parse(process.env.SAILORCHAT_CONFIG).mysql;
 	db_config.host = env_config.host;
 	db_config.port = env_config.port;
 	db_config.user = env_config.username;

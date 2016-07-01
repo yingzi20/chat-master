@@ -70,8 +70,8 @@ socket.on('user_say', function (_nick_name, _content) {
     console.log('user_say(' + _nick_name + ', ' + _content + ')');
     addMessage(_nick_name, getLocalHMS(), _content);
     if ("hidden" == document[GetVisibilityKey()]) {
-	    Notify.show({icon:'/img/qx_chat.png',
-		    'title':'千寻聊天室',
+	    Notify.show({icon:'/img/sailor_chat.png',
+		    'title':'sailor聊天室',
 		    'message':_nick_name + '：' + _content,
 		    'autoclose':3,
             'onclick': function () {
