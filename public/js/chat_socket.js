@@ -1,5 +1,5 @@
 /**
- * Created by coofly on 2014/7/12.
+ * Created by sailor on 2014/7/12.
  */
 
 var socket = io.connect();

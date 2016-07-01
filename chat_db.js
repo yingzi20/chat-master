@@ -1,5 +1,5 @@
 /**
- * Created by coofly on 2014/8/6.
+ * Created by sailor on 2014/8/6.
  */
 var mysql = require('mysql');
 /*
@@ -23,6 +23,7 @@ var db_config = {
 };
 
 if(process.env.SAILORCHAT_CONFIG) {
+	console.log(111,process.env.SAILORCHAT_CONFIG);
 	var env_config = JSON.parse(process.env.SAILORCHAT_CONFIG).mysql;
 	db_config.host = env_config.host;
 	db_config.port = env_config.port;
